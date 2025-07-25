@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENANi - あなたの"？"を"！"に変える | ウェブ制作・DX支援</title>
+    <meta name="description" content="TENANi（テナニ）は、デザイン×AI×DXでビジネスをもっと楽しくする、親しみやすいIT相談室です。ホームページ制作、グラフィックデザイン、LINE公式アカウント構築、AI業務効率化システムをご提供します。">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 宇宙空間効果 -->
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="space-particle"></div>
+    <div class="space-particle"></div>
+    <div class="space-particle"></div>
+    <div class="space-particle"></div>
+    <div class="space-particle"></div>
+    <div class="space-particle"></div>
+    
+    <!-- 新しいアニメーション要素 -->
+    <div class="floating-bubble"></div>
+    <div class="floating-bubble"></div>
+    <div class="floating-bubble"></div>
+    <div class="floating-bubble"></div>
+    <div class="floating-cube"></div>
+    <div class="floating-cube"></div>
+    <div class="floating-cube"></div>
+    <div class="pulse-circle"></div>
+    <div class="pulse-circle"></div>
+    <div class="pulse-circle"></div>
+    <div class="wave-animation"></div>
+    <div class="wave-animation"></div>
+    
+    <!-- 未来的な幾何学エレメント -->
+    <div class="geometric-hexagon"></div>
+    <div class="geometric-hexagon"></div>
+    <div class="geometric-hexagon"></div>
+    <div class="geometric-triangle"></div>
+    <div class="geometric-triangle"></div>
+    <div class="geometric-diamond"></div>
+    <div class="geometric-diamond"></div>
+    <div class="hologram-ring"></div>
+    <div class="hologram-ring"></div>
+    <div class="hologram-ring"></div>
+    <div class="data-stream"></div>
+    <div class="data-stream"></div>
+    <div class="energy-field"></div>
+    <div class="energy-field"></div>
+    
+    <!-- グローバルサイバーエフェクト -->
+    <div class="global-cyber-grid"></div>
+    <div class="global-neon-line global-neon-line-1"></div>
+    <div class="global-neon-line global-neon-line-2"></div>
+    <div class="global-neon-line global-neon-line-3"></div>
+    <div class="global-data-particle"></div>
+    <div class="global-data-particle"></div>
+    <div class="global-data-particle"></div>
+    <div class="global-data-particle"></div>
+    <div class="global-scan-line"></div>
+    
+    <!-- ローディング画面 -->
+    <div id="loading" class="loading">
+        <div class="loading-icon">
+            <span class="question-mark">？</span>
+        </div>
+    </div>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <span class="question-mark">？</span>
+                    </div>
+                    <span class="logo-text">TENANi</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="./news.html">お知らせ</a></li>
+                        <li><a href="#about">会社概要</a></li>
+                        <li><a href="#services">サービス</a></li>
+                        <li><a href="#portfolio">制作実績</a></li>
+                        <li><a href="#pricing">料金プラン</a></li>
+                        <li><a href="#contact" class="btn-line">LINEで連絡</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローエリア -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="digital-particles"></div>
+            <div class="chat-bubbles"></div>
+            <div class="code-lines"></div>
+            <div class="floating-shapes"></div>
+            
+            <!-- 派手なファーストビューアニメーション -->
+            <div class="cyber-grid"></div>
+            <div class="cyber-grid cyber-grid-2"></div>
+            <div class="neon-orb neon-orb-1"></div>
+            <div class="neon-orb neon-orb-2"></div>
+            <div class="neon-orb neon-orb-3"></div>
+            <div class="laser-beam laser-beam-1"></div>
+            <div class="laser-beam laser-beam-2"></div>
+            <div class="laser-beam laser-beam-3"></div>
+            <div class="matrix-rain"></div>
+            <div class="matrix-rain matrix-rain-2"></div>
+            <div class="matrix-rain matrix-rain-3"></div>
+            <div class="energy-burst"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <h1 class="hero-title">
+                        AIと戦略を<span class="highlight">考える</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        業務の課題をクリエイティブで解決
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary btn-large">
+                            無料相談で始める
+                        </a>
+                        <a href="#services" class="btn-secondary btn-large">
+                            <span>サービス一覧を見る</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-illustration" data-aos="fade-left" data-aos-delay="200">
+                    <div class="tech-grid">
+                        <div class="tech-card" data-delay="0">
+                            <div class="tech-icon">
+                                <div class="icon-website"></div>
+                            </div>
+                            <span>Webサイト制作</span>
+                        </div>
+                        <div class="tech-card" data-delay="100">
+                            <div class="tech-icon">
+                                <div class="icon-business-card"></div>
+                            </div>
+                            <span>名刺作成</span>
+                        </div>
+                        <div class="tech-card" data-delay="200">
+                            <div class="tech-icon">
+                                <div class="icon-flyer"></div>
+                            </div>
+                            <span>チラシ作成</span>
+                        </div>
+                        <div class="tech-card" data-delay="300">
+                            <div class="tech-icon">
+                                <div class="icon-mobile"></div>
+                            </div>
+                            <span>DX支援</span>
+                        </div>
+                        <div class="tech-card" data-delay="400">
+                            <div class="tech-icon">
+                                <div class="icon-ai"></div>
+                            </div>
+                            <span>AI開発</span>
+                        </div>
+                        <div class="tech-card" data-delay="500">
+                            <div class="tech-icon">
+                                <div class="icon-media"></div>
+                            </div>
+                            <span>画像・動画作成</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 企業キャラクター紹介セクション -->
+                <div class="character-showcase" data-aos="fade-up" data-aos-delay="600">
+                    <div class="character-intro">
+                        <h3 class="character-title">
+                            <span class="title-text">企業キャラクター作成もお任せください。</span>
+                        </h3>
+                        <p class="character-subtitle">オリジナルキャラクターでブランドに個性を</p>
+                    </div>
+                    <div class="character-grid-container">
+                        <div class="character-carousel">
+                            <div class="character-slider">
+                                <!-- Character 01 -->
+                                <div class="character-card featured">
+                                    <div class="company-logo-badge">
+                                        <img src="images/logos/company_01.png" alt="企業ロゴ" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMTgiIGZpbGw9IiNmZmY1ZWIiIHN0cm9rZT0iI2ZmNmIzNSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMjAiIHk9IjI2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmY2YjM1Ij5BPC90ZXh0Pgo8L3N2Zz4='">
+                                    </div>
+                                    <div class="character-image">
+                                        <img src="images/characters/character_01.png" alt="企業キャラクター1">
+                                    </div>
+                                    <div class="character-info">
+                                        <div class="character-name">クリッピー</div>
+                                        <div class="character-role">ウェブ制作会社</div>
+                                        <div class="character-service service-homepage">ウェブサイト自動応答</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Character 02 -->
+                                <div class="character-card">
+                                    <div class="company-logo-badge">
+                                        <img src="images/logos/company_02.png" alt="企業ロゴ" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMTgiIGZpbGw9IiNlYmY4ZmYiIHN0cm9rZT0iIzAwYmZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMjAiIHk9IjI2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBiZmZmIj5CPC90ZXh0Pgo8L3N2Zz4='">
+                                    </div>
+                                    <div class="character-image">
+                                        <img src="images/characters/character_02.png" alt="企業キャラクター2">
+                                    </div>
+                                    <div class="character-info">
+                                        <div class="character-name">ワラトリくん</div>
+                                        <div class="character-role">飲食店</div>
+                                        <div class="character-service service-web">ウェブマーケティング</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Character 03 -->
+                                <div class="character-card">
+                                    <div class="company-logo-badge">
+                                        <img src="images/logos/company_03.png" alt="企業ロゴ" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMTgiIGZpbGw9IiNmMGY0ZmYiIHN0cm9rZT0iIzY2NjZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMjAiIHk9IjI2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjY2NmZmIj5DPC90ZXh0Pgo8L3N2Zz4='">
+                                    </div>
+                                    <div class="character-image">
+                                        <img src="images/characters/character_03.png" alt="企業キャラクター3">
+                                    </div>
+                                    <div class="character-info">
+                                        <div class="character-name">テンテン</div>
+                                        <div class="character-role">遺品整理会社</div>
+                                        <div class="character-service service-web">ウェブマーケティング</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Character 04 -->
+                                <div class="character-card">
+                                    <div class="company-logo-badge">
+                                        <img src="images/logos/company_04.png" alt="企業ロゴ" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMTgiIGZpbGw9IiNmZmViZjAiIHN0cm9rZT0iI2ZmNjZhYSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMjAiIHk9IjI2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmY2NmFhIj5EPC90ZXh0Pgo8L3N2Zz4='">
+                                    </div>
+                                    <div class="character-image">
+                                        <img src="images/characters/character_04.png" alt="企業キャラクター4">
+                                    </div>
+                                    <div class="character-info">
+                                        <div class="character-name">スプレッド</div>
+                                        <div class="character-role">美容室</div>
+                                        <div class="character-service service-reservation">予約管理</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Character 05 -->
+                                <div class="character-card">
+                                    <div class="company-logo-badge">
+                                        <img src="images/logos/company_05.png" alt="企業ロゴ" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMTgiIGZpbGw9IiNmZmY1ZWIiIHN0cm9rZT0iI2ZmYTUwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMjAiIHk9IjI2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZhNTAwIj5FPC90ZXh0Pgo8L3N2Zz4='">
+                                    </div>
+                                    <div class="character-image">
+                                        <img src="images/characters/character_05.png" alt="企業キャラクター5">
+                                    </div>
+                                    <div class="character-info">
+                                        <div class="character-name">ケンセツくん</div>
+                                        <div class="character-role">建設会社</div>
+                                        <div class="character-service service-internal">社内業務応答</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Character 06 -->
+                                <div class="character-card">
+                                    <div class="company-logo-badge">
+                                        <img src="images/logos/company_06.png" alt="企業ロゴ" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMTgiIGZpbGw9IiNlYmZmZWIiIHN0cm9rZT0iIzAwZGQwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMjAiIHk9IjI2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBkZDAwIj5GPC90ZXh0Pgo8L3N2Zz4='">
+                                    </div>
+                                    <div class="character-image">
+                                        <img src="images/characters/character_06.png" alt="企業キャラクター6">
+                                    </div>
+                                    <div class="character-info">
+                                        <div class="character-name">シラヌイ</div>
+                                        <div class="character-role">飲食店</div>
+                                        <div class="character-service service-line">LINE自動応答</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Character 07 -->
+                                <div class="character-card">
+                                    <div class="company-logo-badge">
+                                        <img src="images/logos/company_07.png" alt="企業ロゴ" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMTgiIGZpbGw9IiNmNWViZmYiIHN0cm9rZT0iI2FhNjZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMjAiIHk9IjI2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjYWE2NmZmIj5HPC90ZXh0Pgo8L3N2Zz4='">
+                                    </div>
+                                    <div class="character-image">
+                                        <img src="images/characters/character_07.png" alt="企業キャラクター7">
+                                    </div>
+                                    <div class="character-info">
+                                        <div class="character-name">ねるるん</div>
+                                        <div class="character-role">印刷会社</div>
+                                        <div class="character-service service-homepage">ウェブサイト自動応答</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Character 08 -->
+                                <div class="character-card">
+                                    <div class="company-logo-badge">
+                                        <img src="images/logos/company_08.png" alt="企業ロゴ" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMTgiIGZpbGw9IiNmZmViZmYiIHN0cm9rZT0iI2ZmNjZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMjAiIHk9IjI2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmY2NmZmIj5IPC90ZXh0Pgo8L3N2Zz4='">
+                                    </div>
+                                    <div class="character-image">
+                                        <img src="images/characters/character_08.png" alt="企業キャラクター8">
+                                    </div>
+                                    <div class="character-info">
+                                        <div class="character-name">ベアサー</div>
+                                        <div class="character-role">化粧品販売会社</div>
+                                        <div class="character-service service-homepage">ウェブサイト自動応答</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="character-navigation">
+                            <button class="nav-btn prev-btn" id="prevCharacters">‹ 前へ</button>
+                            <button class="nav-btn next-btn" id="nextCharacters">次へ ›</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ニュース -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">お知らせ</h2>
+                <p class="section-subtitle">
+                    最新情報をお届けします
+                </p>
+            </div>
+            
+            <div class="news-grid" data-aos="fade-up">
+                <!-- 1. アップデート記事 -->
+                <a href="./article.html?id=renewal-2025-07-25" class="news-item-link">
+                    <div class="news-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="news-date">2025.07.25</div>
+                        <div class="news-category category-update">アップデート</div>
+                        <h3 class="news-title">株式会社TENANiのホームページをリニューアルいたしました</h3>
+                        <p class="news-excerpt">
+                            この度、弊社ホームページを最新のAI技術を活用して全面リニューアルいたしました。デザインから実装まで、すべてAIのみで制作を行い、より洗練された使いやすいサイトに生まれ変わりました。
+                        </p>
+                    </div>
+                </a>
+                
+                <!-- 2. ニュース記事1 -->
+                <a href="./article.html?id=claude4-opus-2025-07-20" class="news-item-link">
+                    <div class="news-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="news-date">2025.07.20</div>
+                        <div class="news-category category-news">ニュース</div>
+                        <h3 class="news-title">Anthropic「Claude 4 Opus」導入でコーディング効率が革新的に向上</h3>
+                        <p class="news-excerpt">
+                            2025年5月にリリースされたClaude 4 Opusは、ハイブリッドアーキテクチャと拡張思考機能により、企業向けコーディングに特化。当社でもCursorとの連携で導入しています。
+                        </p>
+                    </div>
+                </a>
+                
+                <!-- 3. その他記事1 -->
+                <div class="news-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="news-date">2025.07.10</div>
+                    <div class="news-category category-other">その他</div>
+                    <h3 class="news-title">京都府京都市司厨士協会ウェブサイトが完成いたしました</h3>
+                    <p class="news-excerpt">
+                        西洋料理の伝統と技術を継承する京都府京都市司厨士協会様のウェブサイトを制作させていただきました。協会の活動内容や会員向け情報を分かりやすく整理しました。
+                    </p>
+                </div>
+                
+            </div>
+            
+            <div class="news-more" data-aos="fade-up" data-aos-delay="400">
+                <a href="./news.html" class="btn-secondary">お知らせ一覧を見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- イントロダクション -->
+    <section id="about" class="intro">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">地域密着の株式会社TENANi</h2>
+                <p class="section-subtitle">
+                    AIと戦略を考える！クリエイティブで解決する<br>
+                    あらゆるビジネスのデジタル化を支援します。
+                </p>
+            </div>
+            <div class="strengths">
+                <div class="strength-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="strength-icon">
+                        <div class="icon-design"></div>
+                    </div>
+                    <h3>デザイン力</h3>
+                    <div class="speech-bubble">
+                        <p>ブランドイメージを大切に、<br>ユーザー体験を重視した<br>プロフェッショナルデザイン</p>
+                    </div>
+                </div>
+                <div class="strength-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="strength-icon">
+                        <div class="icon-technology"></div>
+                    </div>
+                    <h3>技術力</h3>
+                    <div class="speech-bubble">
+                        <p>最新のAI・クラウド技術で<br>業務プロセスを最適化し<br>生産性を飛躍的に向上</p>
+                    </div>
+                </div>
+                <div class="strength-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="strength-icon">
+                        <div class="icon-support"></div>
+                    </div>
+                    <h3>サポート力</h3>
+                    <div class="speech-bubble">
+                        <p>導入から運用まで<br>一貫したサポートで<br>確実な成果を保証</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お悩み解決セクション -->
+    <section class="problems">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">こんなお困りごと、ありませんか？</h2>
+            </div>
+            <div class="problem-list">
+                <div class="problem-item" data-aos="zoom-in">
+                    <div class="problem-card">
+                        <div class="problem-icon"></div>
+                        <div class="problem-content">
+                            <div class="problem-text">
+                                <p>ホームページが古くて、スマホで見づらい...</p>
+                            </div>
+                            <div class="solution-bubble">
+                                <p>レスポンシブデザインで解決！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="problem-card">
+                        <div class="problem-icon"></div>
+                        <div class="problem-content">
+                            <div class="problem-text">
+                                <p>予約管理が大変で、ダブルブッキングも...</p>
+                            </div>
+                            <div class="solution-bubble">
+                                <p>LINE予約システムで自動化！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="problem-card">
+                        <div class="problem-icon"></div>
+                        <div class="problem-content">
+                            <div class="problem-text">
+                                <p>AIって聞くけど、うちには関係ないかな...</p>
+                            </div>
+                            <div class="solution-bubble">
+                                <p>身近な業務から始められます！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- サービス詳細 -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">TENANiのサービス</h2>
+                <p class="section-subtitle">
+                    デザインとテクノロジーで、あなたのビジネスをサポートします
+                </p>
+            </div>
+            
+            <div class="service-grid" data-aos="fade-up">
+                <div class="service-card" data-aos="zoom-in">
+                    <div class="service-icon">
+                        <div class="service-icon-web"></div>
+                    </div>
+                    <h3>ホームページ制作</h3>
+                    <p>スマホ対応の見やすく<br>使いやすいサイトを制作</p>
+                    <button class="detail-btn" data-service="web">詳しく見る</button>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-icon">
+                        <div class="service-icon-graphic"></div>
+                    </div>
+                    <h3>グラフィックデザイン</h3>
+                    <p>名刺・チラシ・ロゴなど<br>印象的なデザインを</p>
+                    <button class="detail-btn" data-service="graphic">詳しく見る</button>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-icon">
+                        <div class="service-icon-line"></div>
+                    </div>
+                    <h3>LINE公式アカウント構築</h3>
+                    <p>予約・顧客管理を<br>LINEで簡単に</p>
+                    <button class="detail-btn" data-service="line">詳しく見る</button>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-icon">
+                        <div class="service-icon-ai"></div>
+                    </div>
+                    <h3>AI業務効率化システム</h3>
+                    <p>繰り返し作業を自動化<br>業務時間を大幅削減</p>
+                    <button class="detail-btn" data-service="ai">詳しく見る</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 制作実績ギャラリー -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">制作実績</h2>
+                <p class="section-subtitle">
+                    これまでに手がけたプロジェクトをご紹介します
+                </p>
+            </div>
+
+            <div class="portfolio-filter" data-aos="fade-up">
+                <button class="filter-btn" data-filter="all">すべて</button>
+                <button class="filter-btn active" data-filter="web">Web制作</button>
+                <button class="filter-btn" data-filter="graphic">グラフィック</button>
+                <button class="filter-btn" data-filter="line">LINE構築</button>
+                <button class="filter-btn" data-filter="system">システム</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- ポートフォリオアイテムはJavaScriptで動的に生成 -->
+            </div>
+            
+            <div class="portfolio-more" id="portfolioMore" style="display: none;">
+                <button class="btn-secondary" id="showAllPortfolio">もっと見る</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金プラン -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">料金プラン</h2>
+                <p class="section-subtitle">
+                    お客様のご予算に合わせて、最適なプランをご提案します
+                </p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="flip-left">
+                    <div class="plan-name">スタートプラン</div>
+                    <div class="plan-price">
+                        <span class="price-number">15</span>
+                        <span class="price-unit">万円〜</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>シンプルなLP制作</li>
+                        <li>基本的なSEO対策</li>
+                        <li>スマホ対応</li>
+                        <li>お問い合わせフォーム</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary btn-start-plan">このプランで相談</a>
+                </div>
+
+                <div class="pricing-card featured" data-aos="flip-left" data-aos-delay="100">
+                    <div class="badge">おすすめ</div>
+                    <div class="plan-name">スタンダードプラン</div>
+                    <div class="plan-price">
+                        <span class="price-number">40</span>
+                        <span class="price-unit">万円〜</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>5ページ程度のサイト制作</li>
+                        <li>オリジナルデザイン</li>
+                        <li>CMS導入（更新しやすい）</li>
+                        <li>SNS連携</li>
+                        <li>アクセス解析設置</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary btn-standard-plan">このプランで相談</a>
+                </div>
+
+                <div class="pricing-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="plan-name">オーダーメイドプラン</div>
+                    <div class="plan-price">
+                        <span class="price-text">ご相談ください</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>大規模サイト・ECサイト</li>
+                        <li>システム開発</li>
+                        <li>LINE連携システム</li>
+                        <li>AI活用ツール導入</li>
+                        <li>継続的な保守サポート</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary btn-custom-plan">このプランで相談</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ご利用の流れ -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">ご利用の流れ</h2>
+                <p class="section-subtitle">
+                    初めての方でも安心！丁寧にサポートします
+                </p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="progress-line">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-circle">
+                        <div class="step-number">1</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>お問い合わせ</h3>
+                        <p>まずは気軽にご相談ください。<br>どんな小さなことでもOK！</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                </div>
+
+                <div class="process-step" data-aos="fade-left">
+                    <div class="step-circle">
+                        <div class="step-number">2</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>ヒアリング</h3>
+                        <p>お困りごとやご希望を<br>じっくりお聞きします</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                </div>
+
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-circle">
+                        <div class="step-number">3</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>ご提案・お見積り</h3>
+                        <p>最適なプランを<br>わかりやすくご提案</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                </div>
+
+                <div class="process-step" data-aos="fade-left">
+                    <div class="step-circle">
+                        <div class="step-number">4</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>制作・開発</h3>
+                        <p>プロの技術で<br>丁寧に作り上げます</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                </div>
+
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-circle completed">
+                        <div class="step-number">5</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>納品・サポート</h3>
+                        <p>使い方もしっかりサポート<br>安心してお使いください</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- よくある質問 -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">よくある質問</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-category" data-aos="fade-up">
+                    <h3 class="category-title">料金について</h3>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="q-mark">Q</span>
+                            <span>制作費用以外に必要な費用はありますか？</span>
+                            <span class="toggle-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <span class="a-mark">A</span>
+                            <p>ドメイン代（年間5,000円程度）とサーバー代（年間6,000円程度）が別途必要です。設定はこちらでサポートしますのでご安心ください！</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="q-mark">Q</span>
+                            <span>支払い方法は何がありますか？</span>
+                            <span class="toggle-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <span class="a-mark">A</span>
+                            <p>銀行振込、クレジットカード決済に対応しています。分割払いのご相談も承っております。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">制作について</h3>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="q-mark">Q</span>
+                            <span>制作期間はどのくらいですか？</span>
+                            <span class="toggle-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <span class="a-mark">A</span>
+                            <p>シンプルなサイトで2〜3週間、標準的なサイトで1〜2ヶ月程度です。お急ぎの場合はご相談ください。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="q-mark">Q</span>
+                            <span>制作後の保守サポートも充実していますか？</span>
+                            <span class="toggle-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <span class="a-mark">A</span>
+                            <p>はい！制作後の保守・運用サポートも万全です。定期的なバックアップ、セキュリティ更新、トラブル対応など、安心してお任せいただけるサポート体制を整えています。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-subtitle">
+                    まずは気軽にご相談を♪<br>
+                    些細なことでもお気軽にお声がけくださいませ
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form-wrapper" data-aos="fade-right">
+                    <form class="contact-form chat-style">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">電話番号（任意）</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">ご相談内容</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="例：ホームページをリニューアルしたい、予約システムを導入したい、など"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-large">
+                            送信する
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="line-cta">
+                        <h3>LINEでもお問い合わせOK！</h3>
+                        <p>友だち追加で、もっと気軽にご相談いただけます</p>
+                        <a href="#" class="line-add-btn">
+                            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36">
+                        </a>
+                    </div>
+                    
+                    <div class="business-hours">
+                        <h3>営業時間</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span class="day">平日</span>
+                                <span class="time">9:00 - 18:00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">土曜</span>
+                                <span class="time">10:00 - 17:00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">日祝</span>
+                                <span class="time">休業</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-direct">
+                        <p>メールでのお問い合わせ</p>
+                        <a href="mailto:info@tenani.jp" class="email-link">
+                            <div class="email-icon"></div>
+                            info@tenani.jp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フローティングAIチャットボット -->
+    <div class="floating-chatbot" id="floatingChatbot">
+        <div class="chatbot-icon">
+            <div class="ai-brain"></div>
+            <div class="ai-pulse"></div>
+            <div class="ai-pulse ai-pulse-2"></div>
+        </div>
+        <div class="chatbot-tooltip">AIに相談</div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TENANi</h3>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>サービス</h4>
+                    <ul>
+                        <li><a href="#services">ホームページ制作</a></li>
+                        <li><a href="#services">グラフィックデザイン</a></li>
+                        <li><a href="#services">LINE公式アカウント構築</a></li>
+                        <li><a href="#services">AI業務効率化システム</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>会社情報</h4>
+                    <div class="company-info">
+                        <div class="address">
+                            <p>〒530-0001</p>
+                            <p>大阪府大阪市北区梅田1丁目2番2号</p>
+                            <p>大阪駅前第2ビル12-12</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>MAIL:</strong> <a href="mailto:info@tenani.jp">info@tenani.jp</a></p>
+                            <p><strong>URL:</strong> <a href="https://tenani.jp" target="_blank">https://tenani.jp</a></p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#about">会社概要</a></li>
+                        <li><a href="#portfolio">制作実績</a></li>
+                        <li><a href="#pricing">料金プラン</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 TENANi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- サービス詳細モーダル -->
+    <div class="modal" id="serviceModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- モーダルコンテンツはJavaScriptで動的に生成 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/portfolio-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
